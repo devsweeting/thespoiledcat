@@ -5,7 +5,7 @@ function Header() {
   return(
     <React.Fragment>
       <h1>The Spoiled Cat</h1>
-      <Link to="/"> Home </Link> | <Link to='/about'> About Us</Link> | <Link to="/store"> Store </Link>
+      <Link to="/"> Home </Link> | <Link to='/about'> About Us </Link> | <Link to="/cart"> Cart</Link>
     </React.Fragment>
   )
 }

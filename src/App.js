@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import Header from './Header';
 import Home from './HomePage/Home';
 import About from './AboutPage/About';
-import Store from './StorePage/Store';
+import Cart from './CartPage/Cart';
 
 
 function App(){
@@ -13,11 +13,10 @@ function App(){
       <Switch>
         <Route exact path='/' component={ Home } />
         <Route exact path='/about' component={ About } />
-        <Route exact path='/store' component={ Store } />
+        <Route exact path='/cart' component={ Cart } />
       </Switch>
     </React.Fragment>
   );
 }
 
 export default App;
-

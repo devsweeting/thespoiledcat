@@ -1,9 +1,12 @@
 import React from "react";
+import ProductList from './ProductList';
+import data from '../mockdata.json';
 
-function Home() {
+function Home(props) {
   return(
     <React.Fragment>
       <p>Home Working</p>
+      <ProductList products={ data.products }/>
     </React.Fragment>
   )
 }

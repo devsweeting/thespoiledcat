@@ -47,8 +47,7 @@
         "2-for-1",
         "recycled"
       ]
-    }
-    ,
+    },
     {
       "id": 5,
       "name": "Refillable Catnip Body Pillow",
@@ -65,7 +64,7 @@
       "id": 6,
       "name": "Organic Loose Catnip 1/2 Oz",
       "price": 6.99,
-      "description": "We are finally able to offer up our Organic loose Catnip. It is cut and sifted, human-grade, and a 1/2 ounce paper bowl sells for 7.00",
+      "description":"We are finally able to offer up our Organic loose Catnip. It is cut and sifted, human-grade, and a 1/2 ounce paper bowl sells for 7.00",
       "image": "placeholder",
       "keywords": [
         "local",
@@ -77,13 +76,13 @@
       "id": 7,
       "name": "Carrot of Joy and Happiness",
       "price": 10.99,
-      "description": "Our new refillable style pillow, in our super popular carrot style. It has a bow at the top that you can untie, so that you can add more catnip, and empty it out to wash it.",
+      "description":"Our new refillable style pillow, in our super popular carrot style. It has a bow at the top that you can untie, so that you can add more catnip, and empty it out to wash it.",
       "image": "placeholder",
       "keywords": [
         "carrot",
         "catnip",
         "refillable"
       ]
-    }
+    },
   ]
 }
