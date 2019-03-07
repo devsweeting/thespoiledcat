@@ -1,14 +1,46 @@
 import React from "react";
 import ProductListItem  from './ProductListItem';
+import styled from 'styled-components';
+import { connect } from 'react-redux';
+import { cartItemsWithQuantities } from '../HelperMethods';
+
+const ProductListings = styled.section `
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  flex-direction: row;
+`;
 
 function ProductList(props) {
   return(
-    <div>
+    <ProductListings>
       {props.products.map( product =>
-       <ProductListItem product={ product } />
-       )}
-    </div>
+       <ProductListItem
+         product={ product }
+         addToCart={props.addToCart}
+         cart={cartItemsWithQuantities(props.cart)}
+         key={product.id}
+        />
+    )};
+    </ProductListings>
   )
 }
 
-export default ProductList
+const mapStateToProps = state => {
+  return {
+    cart: state.cart
+  }
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    addToCart: (item) => {
+      dispatch({ type: 'ADD', payload: item })
+    },
+    removeFromCart: (item) => {
+      dispatch({ type: 'REMOVE', payload: item })
+    }
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ProductList);
