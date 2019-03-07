@@ -9,6 +9,12 @@ const addToCart = (cart, item) => {
     : [ ...cartWithoutItem(cart, item), { ...cartItem, quantity: cartItem.quantity + 1 }]
 }
 
+const removeFromCart = (cart, item) => {
+  return item.quantity === 1
+  ? [ ...cartWithoutItem(cart, item) ]
+  : [ ...cartWithoutItem(cart, item), { ...item, quantity: item.quantity - 1 }]
+}
+
 const cartReducer = (state=[], action) => {
   let firstMatchIndex;
   switch(action.type) {
@@ -16,8 +22,8 @@ const cartReducer = (state=[], action) => {
      return addToCart(state, action.payload)
 
     case 'REMOVE':
-     firstMatchIndex = state.indexO(action.payload)
-     return state.filter((item, index) => index !== firstMatchIndex)
+     firstMatchIndex = state.indexOf(action.payload)
+     return removeFromCart(state, action.payload)
 
     default:
       return state;

@@ -14,8 +14,6 @@ const Image = styled.img `
 
 export default function ProductListItem(props) {
 
-  // const thisItemInCart = props.cart.filter(item => item.id === props.product.id)[0]
-
   return(
     <ProductItem>
       <Image src={ `/images/${props.product.image } `} alt={ props.product.image } />
@@ -27,6 +25,13 @@ export default function ProductListItem(props) {
           (props.cartItem && props.cartItem.quantity) ||  0
         })
       </button>
+
+      {
+        props.cartItem
+        ?
+        <button onClick={() => props.removeFromCart(props.cartItem)}> Remove </button>
+        : null
+      }
     </ProductItem>
   )
 }
