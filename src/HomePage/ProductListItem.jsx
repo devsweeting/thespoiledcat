@@ -9,12 +9,12 @@ const ProductItem = styled.section `
 `;
 
 const Image = styled.img `
-  height: 30px;
+  height: 40px;
 `;
 
 export default function ProductListItem(props) {
 
-  const thisItemInCart = props.cart.filter(item => item.id === props.product.id)[0]
+  // const thisItemInCart = props.cart.filter(item => item.id === props.product.id)[0]
 
   return(
     <ProductItem>
@@ -24,7 +24,7 @@ export default function ProductListItem(props) {
       <p>{ props.product.description }</p>
 
       <button onClick={() => props.addToCart(props.product)} > Add to Cart({
-          (thisItemInCart && thisItemInCart.quantity) ||  0
+          (props.cartItem && props.cartItem.quantity) ||  0
         })
       </button>
     </ProductItem>
