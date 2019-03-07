@@ -15,6 +15,10 @@ const removeFromCart = (cart, item) => {
   : [ ...cartWithoutItem(cart, item), { ...item, quantity: item.quantity - 1 }]
 }
 
+const eraseCart = (cart, item) => {
+  return [ ...cartWithoutItem(cart, item) ]
+}
+
 const cartReducer = (state=[], action) => {
   let firstMatchIndex;
   switch(action.type) {
@@ -24,6 +28,9 @@ const cartReducer = (state=[], action) => {
     case 'REMOVE':
      firstMatchIndex = state.indexOf(action.payload)
      return removeFromCart(state, action.payload)
+
+    case 'ERASE':
+      return eraseCart(state, action.payload)
 
     default:
       return state;
