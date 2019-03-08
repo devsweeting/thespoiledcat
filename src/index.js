@@ -2,17 +2,30 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { createStore, combineReducers } from 'redux';
+import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import styled from 'styled-components';
 import cartReducer from './CartPage/CartReducer';
+import persistDataLocally from './middleware/persist-data-locally';
 
 const rootReducer = combineReducers({
   cart: cartReducer,
   initialState: null
 });
 
+let retrievedState;
+try {
+  retrievedState = localStorage.getItem('reduxStore');
+  if (retrievedState === null) {
+    retrievedState = {};
+  }
+  retrievedState = JSON.parse(retrievedState);
+} catch (err) {
+  retrievedState = {};
+}
+// Paste in createStore to use redux tools
+// window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 
 const AppContainer = styled.section `
   width: 1000px;
@@ -23,7 +36,11 @@ const AppContainer = styled.section `
 
 const store = createStore(
   rootReducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  retrievedState,
+  compose(
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+  applyMiddleware(persistDataLocally)
+  )
 );
 
 store.subscribe(() =>
