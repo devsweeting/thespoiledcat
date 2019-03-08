@@ -1,3 +1,7 @@
+
+
+
+// -------------_ACTIONS_-----------------------
 const cartWithoutItem = (cart, item) => cart.filter(cartItem => cartItem.id !== item.id)
 
 const itemInCart = (cart, item) => cart.filter(cartItem => cartItem.id === item.id)[0]
@@ -19,6 +23,8 @@ const eraseCart = (cart, item) => {
   return [ ...cartWithoutItem(cart, item) ]
 }
 
+
+// ----------------_REDUCER_---------------------------
 const cartReducer = (state=[], action) => {
   let firstMatchIndex;
   switch(action.type) {

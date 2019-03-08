@@ -4,6 +4,8 @@ import Header from './Header';
 import Home from './HomePage/Home';
 import About from './AboutPage/About';
 import Cart from './CartPage/Cart';
+import constants from './constants';
+const { c } = constants;
 
 
 function App(){

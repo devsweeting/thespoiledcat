@@ -6,8 +6,13 @@ import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import styled from 'styled-components';
-import cartReducer from './CartPage/CartReducer';
+import cartReducer from './constants/CartReducer';
 import persistDataLocally from './middleware/persist-data-locally';
+import constants from './constants';
+import firebase from 'firebase';
+const { firebaseConfig } = constants;
+
+firebase.initializeApp(firebaseConfig);
 
 const rootReducer = combineReducers({
   cart: cartReducer,
