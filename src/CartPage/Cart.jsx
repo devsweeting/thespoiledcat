@@ -5,11 +5,6 @@ import CartTable from './CartTable';
 import Checkout from './Checkout';
 
 
-
-function sort(items) {
-  return items.sort(function(a, b) {return a.id - b.id})
-}
-
 export function Cart(props) {
   return (
     <React.Fragment>

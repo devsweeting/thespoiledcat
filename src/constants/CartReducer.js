@@ -1,5 +1,8 @@
+import constants from './../constants';
+import firebase from 'firebase';
+const { firebaseConfig } = constants;
 
-
+firebase.initializeApp(firebaseConfig);
 
 // -------------_ACTIONS_-----------------------
 const cartWithoutItem = (cart, item) => cart.filter(cartItem => cartItem.id !== item.id)

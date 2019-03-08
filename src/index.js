@@ -9,10 +9,7 @@ import styled from 'styled-components';
 import cartReducer from './constants/CartReducer';
 import persistDataLocally from './middleware/persist-data-locally';
 import constants from './constants';
-import firebase from 'firebase';
-const { firebaseConfig } = constants;
-
-firebase.initializeApp(firebaseConfig);
+const { c } = constants;
 
 const rootReducer = combineReducers({
   cart: cartReducer,
@@ -29,8 +26,6 @@ try {
 } catch (err) {
   retrievedState = {};
 }
-// Paste in createStore to use redux tools
-// window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 

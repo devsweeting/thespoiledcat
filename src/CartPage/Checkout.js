@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from 'react-redux'
-
+import constants from './../constants';
+const { c } = constants;
 
 function Checkout(props) {
   return(

@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import constants from './../constants';
+const { c } = constants;
 
 const ProductItem = styled.section `
   border: black 1px solid;

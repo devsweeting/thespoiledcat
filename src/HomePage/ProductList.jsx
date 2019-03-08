@@ -3,6 +3,8 @@ import ProductListItem  from './ProductListItem';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
 import { cartItemsWithQuantities } from '../HelperMethods';
+import constants from './../constants';
+const { c } = constants;
 
 const ProductListings = styled.section `
   display: flex;
