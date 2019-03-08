@@ -27,6 +27,8 @@ try {
 // Paste in createStore to use redux tools
 // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 
+const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
 const AppContainer = styled.section `
   width: 1000px;
   margin: 10px auto;
@@ -37,10 +39,7 @@ const AppContainer = styled.section `
 const store = createStore(
   rootReducer,
   retrievedState,
-  compose(
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
-  applyMiddleware(persistDataLocally)
-  )
+  composeEnhancer(applyMiddleware(persistDataLocally))
 );
 
 store.subscribe(() =>
