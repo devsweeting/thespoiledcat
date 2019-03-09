@@ -13,22 +13,22 @@ function CheckoutForm(props) {
   let _email = null;
 
   function addOrder() {
-    
+
   }
 
   function handleNewOrderSubmission(event) {
     event.preventDefault();
     const { dispatch } = props;
-    // const action = {
-    //   type: types.ADD_TICKET,
-    //   id: v4(),
-    //   names: _names.value,
-    //   location: _location.value,
-    //   issue: _issue.value,
-    //   timeOpen: new Moment(),
-    //   formattedWaitTime: new Moment().fromNow(true)
-    // };
-    // dispatch(action);
+    const action = {
+      type: "ADD_ORDER",
+      firstName: _firstName.value ,
+      lastName: _lastName.value,
+      address: _address.value,
+      city: _city.value,
+      state: _state.value,
+      email: _email.value,
+    };
+    dispatch(action);
     dispatch(addOrder(_firstName.value, _lastName.value, _address.value, _city.value, _state.value, _email.value));
     _firstName.value = '';
     _lastName.value = '';
