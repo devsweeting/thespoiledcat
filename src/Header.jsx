@@ -8,7 +8,9 @@ const Header = ({ cart }) => {
       <h1>The Spoiled Cat</h1>
       <Link to="/"> Home </Link> |
       <Link to='/about'> About Us </Link> |
-      <Link to="/cart"> Cart  ({cart.length})</Link>
+      <Link to="/cart"> Cart  ({cart.reduce((acc, item) => {
+          return acc + item.quantity
+      }, 0 )})</Link>
     </React.Fragment>
   )
 }

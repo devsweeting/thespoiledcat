@@ -7,13 +7,18 @@ import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import styled from 'styled-components';
 import cartReducer from './constants/CartReducer';
+import purchaseListReducer from './constants/purchaseListReducer';
+import { reducer as formReducer } from 'redux-form';
+
 import persistDataLocally from './middleware/persist-data-locally';
 import constants from './constants';
 const { c } = constants;
 
 const rootReducer = combineReducers({
   cart: cartReducer,
-  initialState: null
+  purchaseList: purchaseListReducer,
+  initialState: null,
+  form: formReducer
 });
 
 let retrievedState;
