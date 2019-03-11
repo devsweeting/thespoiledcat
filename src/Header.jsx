@@ -1,24 +1,47 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
+import styled from 'styled-components';
 
-const Header = ({ cart }) => {
+const NavWrapper = styled.section `
+  height: 150px; /* 100% Full-height */
+  width: 100%; /* 0 width - change this with JavaScript */
+  background-color: black;
+  position: fixed;
+  top: 0;
+  color: white;
+  text-align: center;
+  z-index: 1;
+
+  @media (max-width: 768px) {
+     background-color: black;
+     height: 20%;
+     width: 100%;
+   }
+`;
+
+const Title = styled.h1 `
+ font-size: 50px
+`;
+
+const NavLinks = styled.section `
+display: flex;
+justify-content: space-around;
+`;
+
+const StyledRoute = styled.section `
+`;
+
+function Header() {
   return(
-    <React.Fragment>
-      <h1>The Spoiled Cat</h1>
-      <Link to="/"> Home </Link> |
-      <Link to='/about'> About Us </Link> |
-      <Link to="/cart"> Cart  ({cart.reduce((acc, item) => {
-          return acc + item.quantity
-      }, 0 )})</Link>
-    </React.Fragment>
+    <NavWrapper>
+      <Title>the Spoiled Cat</Title>
+      <NavLinks>
+        <StyledRoute><Link to="/"> Home </Link></StyledRoute>
+        <StyledRoute><Link to='/about'> About Us </Link></StyledRoute>
+        <StyledRoute><Link to="/cart"> View Cart </Link></StyledRoute>
+      </NavLinks>
+    </NavWrapper>
   )
 }
 
-function mapStateToProps(state) {
-  return {
-    cart: state.cart,
-  }
-}
-
-export default connect(mapStateToProps)(Header);
+export default Header;

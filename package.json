@@ -4,8 +4,10 @@
   "private": true,
   "dependencies": {
     "firebase": "^5.8.6",
+    "materialize-css": "^1.0.0-rc.2",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
+    "react-materialize": "^2.6.0",
     "react-redux": "^6.0.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.5",
@@ -30,6 +32,8 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "redux-devtools": "^3.5.0"
+    "file-loader": "^1.1.6",
+    "redux-devtools": "^3.5.0",
+    "url-loader": "^0.6.2"
   }
 }
