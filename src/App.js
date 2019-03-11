@@ -9,6 +9,7 @@ import styled from 'styled-components';
 const HomeContainer = styled.section `
 width: 100%;
 display: flex;
+margin-top: 150px;
 justify-content: center;
 
 @media (max-width: 768px) {
