@@ -6,6 +6,7 @@
       "price": 8.99,
       "description": "Our most popular fabric 12 inches of fun",
       "image": "blackcat.png",
+      "paypalId": "JN5TKZYU2WHME",
       "keywords": [
         "furry",
         "catnip",
@@ -18,6 +19,7 @@
       "price": 8.99,
       "description": "This is the fancy version of our Catnip Body Pillow. High-end, tougher materials for cats who are rougher on things.",
       "image": "gingercat.png",
+      "paypalId": "3ECTK5Z6LGQQG",
       "keywords": [
         "pillow",
         "catnip",
@@ -30,6 +32,7 @@
       "price": 13.99,
       "description": "24 inches of BIG catnip fun, 3/4 cup of our fresh Catnip inside. Definitely for the bigger kitty. Please specify furry or upholstery fabric",
       "image": "greycat.png",
+      "paypalId": "UZWAJ63HWAQS2",
       "keywords": [
         "pillow",
         "catnip",
@@ -42,6 +45,7 @@
       "price": 9.99,
       "description": "A fantastic wonky shape that has great movement, made from our scrap fabric with 1/4 cup of catnip 2 pillows for 10.00 WOOHOO recycled!!",
       "image": "sassycat.png",
+      "paypalId": "JN5TKZYU2WHME",
       "keywords": [
         "wonky",
         "2-for-1",
@@ -55,6 +59,7 @@
       "price": 12.99,
       "description": "This is the refill version of our Catnip Body Pillow. They are made from high-end upholstery fabrics, with a gather at the top that is tied with a furry strip of fabric. They have the same amount of catnip as our most popular Body Pillow size,  but can be opened up to be washed and refilled. Upholstery colors vary, we'll surprise you",
       "image": "gingercat.png",
+      "paypalId": "JN5TKZYU2WHME",
       "keywords": [
         "refillable",
         "body pillow",
@@ -67,6 +72,7 @@
       "price": 6.99,
       "description": "We are finally able to offer up our Organic loose Catnip. It is cut and sifted, human-grade, and a 1/2 ounce paper bowl sells for 7.00",
       "image": "greycat.png",
+      "paypalId": "JN5TKZYU2WHME",
       "keywords": [
         "local",
         "catnip",
@@ -79,6 +85,7 @@
       "price": 10.99,
       "description": "Our new refillable style pillow, in our super popular carrot style. It has a bow at the top that you can untie, so that you can add more catnip, and empty it out to wash it.",
       "image": "sassycat.png",
+      "paypalId": "JN5TKZYU2WHME",
       "keywords": [
         "carrot",
         "catnip",

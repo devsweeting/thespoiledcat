@@ -1,7 +1,6 @@
 import React from "react";
 import { connect } from 'react-redux'
 import constants from './../constants';
-import { Field, reduxForm } from 'redux-form';
 const { c } = constants;
 
 function CheckoutForm(props) {
@@ -77,10 +76,6 @@ function CheckoutForm(props) {
     </React.Fragment>
   )
 }
-
-CheckoutForm = reduxForm({
-  form: 'checkout'
-})(CheckoutForm)
 
 
 export default CheckoutForm

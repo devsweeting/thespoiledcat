@@ -8,7 +8,6 @@ import { BrowserRouter } from 'react-router-dom';
 import styled from 'styled-components';
 import cartReducer from './constants/CartReducer';
 import ordersReducer from './constants/ordersReducer';
-import { reducer as formReducer } from 'redux-form';
 
 import persistDataLocally from './middleware/persist-data-locally';
 import constants from './constants';
@@ -18,7 +17,6 @@ const rootReducer = combineReducers({
   cart: cartReducer,
   orders: ordersReducer,
   initialState: null,
-  form: formReducer
 });
 
 let retrievedState;
