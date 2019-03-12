@@ -6,6 +6,7 @@ import data from '../mockdata.json';
 import ProductList from './ProductList';
 import Reviews from './Reviews';
 import Location from './Location';
+import ContactForm from './ContactForm';
 
 
 const HomeWrapper = styled.section `
@@ -20,6 +21,7 @@ function Home(props) {
       <About />
       <ProductList products={ data.products }/>
       <Location />
+      <ContactForm />
       <Reviews />
     </HomeWrapper>
   )

@@ -52,7 +52,7 @@ function Reviews(props) {
 
   return(
     <ReviewsWrapper>
-      <Text> How great is our Product? We'll let our customers tell you! </Text>
+      <Text id="reviews"> How great is our Product? We'll let our customers tell you! </Text>
       <div className={classes.root}>
        <GridList className={classes.gridList} cols={2.5}>
          {tileData.map(tile => (
