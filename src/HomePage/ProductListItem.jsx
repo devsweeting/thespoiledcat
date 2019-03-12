@@ -8,6 +8,11 @@ const ProductItem = styled.section `
   z-index: 0;
 `;
 
+const imgStyle = {
+  border: '1px solid pink',
+  backgroundColor: '#b3cdd1',
+  backgroundImage: 'linear-gradient(315deg, #b3cdd1 0%, #9fa4c4 74%)'
+};
 
 export default function ProductListItem(props) {
 let selectedStyle = null
@@ -24,7 +29,7 @@ if (props.product.multipleStyles = true) {
   return(
 
     <ProductItem>
-      <Card header={<CardTitle reveal image={ `/images/${props.product.image } `} waves='light'/>}
+      <Card style={imgStyle} header={<CardTitle reveal image={ `/images/${props.product.image } `} waves='light'/>}
           title={ props.product.name }
           reveal={ props.product.description }>
           <p>${ props.product.price }</p>
