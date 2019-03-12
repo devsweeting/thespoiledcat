@@ -9,12 +9,12 @@ width: 100%;
 display: flex;
 justify-content: center;
 margin-top: 90px;
-// border: 2px solid red;
+border: 2px solid red;
+margin: 30px
 max-width: 1191px;
 
 @media (max-width: 768px) {
    width: 100%
-   margin-left: 0;
  }
 `;
 

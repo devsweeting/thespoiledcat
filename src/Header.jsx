@@ -33,6 +33,10 @@ const Title = styled.h1 `
  padding-top: 20px;
  @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
  font-family: 'Gloria Hallelujah', cursive;
+
+ @media (max-width: 768px) {
+    font-size: 30px;
+  }
 `;
 
 const NavLinks = styled.section `
