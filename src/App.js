@@ -7,8 +7,8 @@ import styled from 'styled-components';
 const HomeContainer = styled.section `
 width: 100%;
 display: flex;
-margin-top: 90px;
 justify-content: center;
+margin-top: 90px;
 // border: 2px solid red;
 max-width: 1191px;
 

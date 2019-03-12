@@ -1,12 +1,11 @@
 import React from "react";
-import ProductList from './ProductList';
-import Jumbotron from './Jumbotron';
-import data from '../mockdata.json';
 import styled from 'styled-components';
-import About from './About';
 import CarouselJumbo from './CarouselJumbo';
-import ResponsiveCarousel from './ResponsiveCarousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import About from './About';
+import data from '../mockdata.json';
+import ProductList from './ProductList';
+import Reviews from './Reviews';
+import Location from './Location';
 
 
 const HomeWrapper = styled.section `
@@ -20,6 +19,8 @@ function Home(props) {
       <CarouselJumbo />
       <About />
       <ProductList products={ data.products }/>
+      <Location />
+      <Reviews />
     </HomeWrapper>
   )
 }

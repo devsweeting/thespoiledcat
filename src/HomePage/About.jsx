@@ -1,10 +1,12 @@
 import React from "react";
 import styled from 'styled-components';
+import Button from 'react-bootstrap/Button';
 
 const Wrapper = styled.section `
   // border: 2px solid yellow;
   min-height: 100px;
   height: 11%;
+  margin-top: 45px;
 `;
 
 const Text = styled.p`
@@ -13,9 +15,16 @@ const Text = styled.p`
   text-align: center;
 `;
 
+const ProductWrapper = styled.section`
+  display: flex;
+  justify-content: center;
+`;
+
 const ProductButton = styled.button`
   background-color: tomato;
   padding: 8px;
+  display: flex;
+  justify-content: center;
 `;
 
 function About() {
@@ -25,8 +34,9 @@ function About() {
 
       <Text> We sell at the Portland Saturday Market on Saturday and Sunday</Text>
 
-      <ProductButton> See Our Products </ProductButton>
-
+      <ProductWrapper>
+        <Button variant="outline-info">See Our Products</Button>
+      </ProductWrapper>
     </Wrapper>
   )
 }

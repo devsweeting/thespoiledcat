@@ -28,8 +28,8 @@ class CarouselJumbo extends React.Component {
                  <MDBMask overlay="black-light" />
                </MDBView>
                <MDBCarouselCaption>
-                 <h1 className="h1-responsive">the Spoiled Cat</h1>
-                 <p>First text</p>
+                 <h1 className="h1-responsive">Oregon's #1 Catnip Toy</h1>
+                 <p>the Spoiled Cat</p>
                </MDBCarouselCaption>
              </MDBCarouselItem>
              <MDBCarouselItem itemId="2">
@@ -38,8 +38,8 @@ class CarouselJumbo extends React.Component {
                  <MDBMask overlay="black-strong" />
                </MDBView>
                <MDBCarouselCaption>
-                 <h1 className="h1-responsive">the Spoiled Cat</h1>
-                 <p>Second text</p>
+                 <h1 className="h1-responsive">Loved by Thousands of Feline Companions!</h1>
+                 <p>the Spoiled Cat</p>
                </MDBCarouselCaption>
              </MDBCarouselItem>
              <MDBCarouselItem itemId="3">
@@ -48,8 +48,8 @@ class CarouselJumbo extends React.Component {
                  <MDBMask overlay="black-slight" />
                </MDBView>
                <MDBCarouselCaption>
-                 <h1 className="h1-responsive">the Spoiled Cat</h1>
-                 <p>Third text</p>
+                 <h1 className="h1-responsive">Made From Locally Grown Catnip!</h1>
+                 <p>the Spoiled Cat</p>
                </MDBCarouselCaption>
              </MDBCarouselItem>
              <MDBCarouselItem itemId="4">
@@ -58,8 +58,8 @@ class CarouselJumbo extends React.Component {
                  <MDBMask overlay="black-light" />
                </MDBView>
                <MDBCarouselCaption>
-                 <h1 className="h1-responsive">the Spoiled Cat</h1>
-                 <p>Taken june 21th by @mattonit</p>
+                 <h1 className="h1-responsive"> We Love Our Customers!</h1>
+                 <p>the Spoiled Cat</p>
                </MDBCarouselCaption>
              </MDBCarouselItem>
            </MDBCarouselInner>

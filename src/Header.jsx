@@ -5,7 +5,9 @@ import styled from 'styled-components';
 const NavWrapper = styled.section `
   height: 90px;
   width: 100%;
-  background-color: black;
+  background-color: #7f5a83;
+  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+
   opacity: .9;
   position: fixed;
   top: 0;
@@ -19,7 +21,7 @@ const NavWrapper = styled.section `
 
   @media (max-width: 768px) {
      background-color: red;
-     height: 20%;
+     height: 80px;
      width: 100%;
    }
 `;
