@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
-import { Carousel } from 'react-bootstrap';
+import Carousel from 'react-bootstrap/Carousel';
 
 const Wrapper = styled.section `
   border: 2px solid grey;
@@ -14,7 +14,7 @@ function CarouselJumbo() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://images.unsplash.com/photo-1475518112798-86ae358241eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
+            src='https://images.unsplash.com/photo-1475518112798-86ae358241eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80'
             alt="First slide"
           />
           <Carousel.Caption>
@@ -51,4 +51,4 @@ function CarouselJumbo() {
   )
 }
 
-export default CarouselJumbo
+export default CarouselJumbo;
