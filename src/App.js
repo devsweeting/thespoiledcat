@@ -7,9 +7,10 @@ import styled from 'styled-components';
 const HomeContainer = styled.section `
 width: 100%;
 display: flex;
-margin-top: 120px;
+margin-top: 90px;
 justify-content: center;
-border: 2px solid red;
+// border: 2px solid red;
+max-width: 1191px;
 
 @media (max-width: 768px) {
    width: 100%

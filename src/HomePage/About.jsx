@@ -2,7 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 
 const Wrapper = styled.section `
-  border: 2px solid yellow;
+  // border: 2px solid yellow;
   min-height: 100px;
   height: 11%;
 `;

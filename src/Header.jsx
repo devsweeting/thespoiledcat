@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const NavWrapper = styled.section `
-  height: 120px; /* 100% Full-height */
-  width: 100%; /* 0 width - change this with JavaScript */
+  height: 90px;
+  width: 100%;
   background-color: black;
+  opacity: .9;
   position: fixed;
   top: 0;
   color: white;
@@ -23,8 +24,12 @@ const NavWrapper = styled.section `
    }
 `;
 
+
 const Title = styled.h1 `
- font-size: 50px
+ font-size: 50px;
+ padding-top: 20px;
+ @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+ font-family: 'Gloria Hallelujah', cursive;
 `;
 
 const NavLinks = styled.section `
