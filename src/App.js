@@ -2,15 +2,14 @@ import React from "react";
 import { Switch, Route } from 'react-router-dom';
 import Header from './Header';
 import Home from './HomePage/Home';
-import About from './AboutPage/About';
 import styled from 'styled-components';
-
 
 const HomeContainer = styled.section `
 width: 100%;
 display: flex;
-margin-top: 150px;
+margin-top: 120px;
 justify-content: center;
+border: 2px solid red;
 
 @media (max-width: 768px) {
    width: 100%
@@ -24,10 +23,7 @@ function App(){
     <React.Fragment>
       <Header />
       <HomeContainer>
-        <Switch>
-          <Route exact path='/' component={ Home } />
-          <Route exact path='/about' component={ About } />
-        </Switch>
+        <Home />
       </HomeContainer>
     </React.Fragment>
   );

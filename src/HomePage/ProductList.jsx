@@ -10,6 +10,8 @@ const ProductListings = styled.section `
   border: 1px auto red;
   border: 2px solid blue;
   z-index: 0;
+  align-items: center;
+  justify-content: center;
 `;
 
 function ProductList(props) {

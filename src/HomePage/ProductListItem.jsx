@@ -27,7 +27,7 @@ if (props.product.multipleStyles = true) {
       <Card header={<CardTitle reveal image={ `/images/${props.product.image } `} waves='light'/>}
           title={ props.product.name }
           reveal={ props.product.description }>
-          <p>{ props.product.price }</p>
+          <p>${ props.product.price }</p>
           <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
             <input type="hidden" name="cmd" value="_s-xclick"/>
             <input type="hidden" name="hosted_button_id" value={ props.product.paypalId }/>

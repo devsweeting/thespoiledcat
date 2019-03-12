@@ -9,12 +9,40 @@ const JumbotronWrapper = styled.section `
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
+  text-align: center;
+`;
+
+const BackgroundFade = styled.section `
+  height: 100%;
+  background-color: #166d3b;
+  background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%);
+  opacity: .9;
+  margin: 0;
+`;
+
+const TitleWrapper = styled.section `
+  position: relative;
+  top: 50%;
+`;
+
+const Title = styled.h1 `
+  color: white;
+  margin: 0;
+`;
+
+const SubHeader = styled.p `
+  color: white;
 `;
 
 function Jumbotron(props) {
   return(
     <JumbotronWrapper>
-      <p>Jumbotron here</p>
+      <BackgroundFade>
+        <TitleWrapper>
+          <Title>the Spoiled Cat</Title>
+          <SubHeader> Oregon #1 Gourmet Cat Products </SubHeader>
+        </TitleWrapper>
+      </BackgroundFade>
 
 
     </JumbotronWrapper>
