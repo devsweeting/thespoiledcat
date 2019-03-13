@@ -9,8 +9,8 @@ width: 100%;
 display: flex;
 justify-content: center;
 margin-top: 90px;
-border: 2px solid red;
-margin: 30px
+/* border: 2px solid red; */
+margin: 0 auto;
 max-width: 1191px;
 
 @media (max-width: 768px) {
