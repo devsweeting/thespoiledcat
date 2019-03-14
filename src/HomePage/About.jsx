@@ -10,7 +10,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 const Wrapper = styled.section `
   // border: 2px solid yellow;
   min-height: 100px;
-  height: 11%;
+  height: auto;
   margin-top: 45px;
 `;
 
@@ -59,7 +59,7 @@ function About(props) {
           offset={-70}
           duration={1500}
         >
-          <Button variant="outline-info">See Our Products</Button>
+          <Button variant="outline-info">Contact Us Below</Button>
         </Link>
       </ProductWrapper>
       </Paper>

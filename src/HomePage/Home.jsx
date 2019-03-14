@@ -9,6 +9,7 @@ import Location from './Location';
 import ContactForm from './ContactForm';
 
 
+
 const HomeWrapper = styled.section `
   // border: 2px solid pink;
   width: 100%:

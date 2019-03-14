@@ -25,8 +25,8 @@ const styles = theme => ({
     padding: '20px',
     textAlign: 'center',
     color: 'black',
-    fontSize: '16px'
-
+    fontSize: '16px',
+    width: '700px'
   },
 });
 
@@ -35,14 +35,6 @@ function ContactForm(props) {
 
   return(
     <ContactWrapper>
-      <div className={classes.root}>
-        <Grid container spacing={24}>
-          <Grid item xs={4}>
-            <Paper className={classes.paper}>
-              <p>We sell at the Portland Saturday Market on Saturday and Sunday</p>
-            </Paper>
-          </Grid>
-          <Grid item xs={8}>
             <Paper className={classes.paper}>
 
               <h2> Contact Us: </h2>
@@ -71,9 +63,6 @@ function ContactForm(props) {
               </Form>
 
             </Paper>
-          </Grid>
-        </Grid>
-      </div>
 
     </ContactWrapper>
   )
